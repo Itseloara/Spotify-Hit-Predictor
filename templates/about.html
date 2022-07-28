@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+
+{% block main_panel %}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <h2>About</h2>
+    <h3>About the Project and the Developer.</h3>
+</div>
+<!-- Page Header End -->
+
+
+<!-- About Start -->
+<div class="about">
+
+    <div class="about-card">
+        <div class="about-text">
+            <img src="../static/img/about.jpg" class="float-left" alt="Original image from pngitem.com">
+            <h2>Introduction</h2>
+            <p>
+                As music lovers, we are interested in the trending predictions of new music.
+                Therefore, I decided to create a prediction model based on 13 Spotify variables
+                of song features and test it on its music library to decide if it could be a 
+                <strong>"Hit or a Flop"</strong>.
+            </p>
+            <br>
+            <p>
+                To develop the Machine Learning model I used Spotify "hit predictor"
+                <b><u><a target='blank' href="https://www.kaggle.com/theoverman/the-spotify-hit-predictor-dataset">dataset.</a></u></b>,
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="about-card">
+        <div class="about-text">
+            <h2>Metadata Summary</h2>
+                <p>
+                    The original data includes 40,000+ songs with release dates ranging from 1960-2019.
+                    The dataset includes measurements for the following features for each track:
+                </p>
+                <br>
+                <p style="text-align:center;">
+                    <b><i>Danceability, energy, key, loudness, mode, speechiness, acousticness,
+                        <br>
+                    instrumentalness, liveness, valence, tempo, duration (in milliseconds),
+                        <br>
+                    time signature, chorus hit and sections.</i></b></p>
+                <br>
+                <p>
+                    The last two features were defined manually and extracted from the data received 
+                    by the API call for Audio Analysis of each particular track, while the first 
+                    ones are defined by Spotify on its Audio Features API call.
+                </p>
+                <br>
+                <p>
+                    Finally, I used <strong style="font-size: large">target</strong>, a boolean variable
+                    describing if the track ever appeared on Billboard's Weekly Hot-100 list, to define if the track could be classified as a hit
+                    or flop.
+                </p>
+                <br>
+                <p>
+                    Details about each of the features and what they measure can be found on
+                    <b><u><a target='blank' href="https://www.kaggle.com/theoverman/the-spotify-hit-predictor-dataset">Kaggle</a></u></b>
+                    , and through 
+                    <b><u><a target='blank' href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">Spotify's documentation.</a></u></b> 
+                </p>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="about-card">
+        <div class="about-text">
+            <h2>Metodology and Results</h2>
+                <p>
+                    I trained and tested 4 different models to evaluate the dataset, in addition to
+                    variations within some of the models, like removing some of the variables to prove its
+                    significance within each model.
+                </p>
+                <ol>
+                    <li>SVM (Support Vector Machine) Model</li>
+                    <li>Logistic Regression</li>
+                    <li>Neural Network/Deep Learning Model</li>
+                    <li>Random Forest Model</li>
+                </ol>
+                <p>
+                    Because of the different natures of values that the variables had, I tried 3 kinds of
+                    normalization:
+                </p>
+                <ol>
+                    <li>Standard Scaler</li>
+                    <li>MinMax Scaler</li>
+                    <li>Independent normalization of each variable</li>
+                </ol>
+                <p>
+                    It is important to highlight that the models were run in local servers and then, the ones with
+                    the best results were run through Google's Collaboratory to maximize their score.
+                </p>
+                <br>
+                <p style="text-align:center;"><b>Results</b></p>
+                <p> After running the 4 models and the variations described above, I chose the <strong>Random
+                        Forest Model</strong>
+                    with adjusted settings as the final model, given that it produced the best results with the
+                    highest levels of accuracy.
+                </p>
+        </div>
+    </div>
+</div>
+
+    <!-- Team Start -->
+<div class="team">
+    <div class="section-header">
+        <h1>About Me</h1>
+    </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+                <div class="team-img">
+                    <img src="../static/img/samyak.jpeg" alt="Team Image">
+                </div>
+                <div class="team-text">
+                    <h2>Samyak Mohelay</h2>
+                    <h3>Developer</h3>
+                    <div class="team-social">
+                        <a class="social-li" target='blank' href="https://www.linkedin.com/in/samyakmohelay/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-gh" target='blank' href="https://github.com/samyakmohelay"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Team End -->
+
+{% endblock %}
