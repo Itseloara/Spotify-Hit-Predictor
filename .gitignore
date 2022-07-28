@@ -3,4 +3,3 @@ venv
 .ipynb_checkpoints
 .cache
 secret_key.py
-requirements.txt
