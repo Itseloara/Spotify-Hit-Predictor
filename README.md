@@ -5,7 +5,7 @@ Original dataset available [here](https://www.kaggle.com/theoverman/the-spotify-
 
 <img src="https://github.com/samyakmohelay/Spotify-hit-predictor/blob/main/static/img/new1.jpg" width="650" height="400">
 
-  
+ 
 ## Go to the final [Hit or Flop?](https://spotify-hit-predictor-app.herokuapp.com/) page!  
 
 
