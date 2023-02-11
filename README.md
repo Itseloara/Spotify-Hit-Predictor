@@ -2,8 +2,10 @@
 This project was designed as a machine learning exercise using the spotify "hit predictor" dataset.
 Original dataset available [here](https://www.kaggle.com/theoverman/the-spotify-hit-predictor-dataset).
 
-![Original image from Luxemburg Times](static/img/about2.png)
-  
+
+<img src="https://github.com/samyakmohelay/Spotify-hit-predictor/blob/main/static/img/new1.jpg" width="650" height="400">
+
+ 
 ## Go to the final [Hit or Flop?](https://spotify-hit-predictor-app.herokuapp.com/) page!  
 
 
@@ -219,3 +221,6 @@ I designed a public webpage for final publication of the machine learning model,
 Visitors to the site can input a recently released song (or their favorite past song) to see how the model would determine whether it might be a "hit" or not. A second page provides interactives graphs to analyze the preferences in different song features across all decades in the full dataset (1960s-2010s), and provides a bit more background as to how each feature is defined.
 
 With graph analysis, I noticed consistency in some audio features for hits throughout the decades, meaning that hits have higher quantities of these features and they seems to retain the same influence as to whether a song is popular.  These feature include: danceability, energy, loudness and valence. Other features have increasingly fluctuated in their importance from one decade to the next, characteristics like chorus hit, duration, liveness, mode, sections and speechiness.  That is to say that maybe in the 60's these features were more prominent in hits of that era, but in recent decades songs with higher levels of these features are more likely to be flops.
+
+
+<img src="https://github.com/samyakmohelay/Spotify-hit-predictor/blob/main/static/img/new2.jpg" width="650" height="400">
